@@ -1,0 +1,15 @@
+## User's input of the 3 numbers
+a = int(input())
+b = int(input())
+c = int(input())
+
+## Checking for the Pythag Party-Trick
+if (a**2 + b**2) > c**2:
+    phrase = "more than"
+if (a**2 + b**2) == c**2:
+    phrase = "equals to"
+if (a**2 + b**2) < c**2:
+    phrase = "less than"
+
+## Printing the answer
+print("{} squared plus {} squared is {} {} squared".format(a, b, phrase, c))

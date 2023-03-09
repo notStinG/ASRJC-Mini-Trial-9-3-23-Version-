@@ -1,0 +1,21 @@
+def answer(txt):
+    if txt == "goodbye":
+        print("see you")
+        return False
+
+    x = txt.split()
+
+    if x[0] in question or txt[-1] == "?":
+        print("not sure really")
+    else:
+        print("but why?")
+    
+    return True
+    
+flag = True
+question = ["how", "what", "why", "who", "when", "where"]
+
+
+while flag:
+    txt = input()
+    flag = answer(txt)

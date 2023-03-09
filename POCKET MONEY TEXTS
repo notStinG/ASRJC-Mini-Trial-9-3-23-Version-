@@ -1,0 +1,21 @@
+num1 = int(input())
+num2 = int(input())
+
+result1 = float(num1 + (num2 / 100))
+result2 = float(num2 + (num1 / 100))
+
+if result1 > 20:
+    flag1 = False
+else:
+    flag1 = True
+
+    
+if result2 > 20:
+    flag2 = False
+else:
+    flag2 = True
+
+if flag1 == True:
+    print("₤{}".format(result1))
+if flag2 == True:
+    print("₤{}".format(result2))
